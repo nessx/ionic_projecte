@@ -1,0 +1,35 @@
+
+<ion-content [fullscreen]="true">
+  <app-header titol="INICIO"></app-header>
+
+  <div id="container">
+    <ion-slides>
+
+      <ion-slide>
+        <div class="slide">
+          <img src="https://media3.giphy.com/media/31vamYdZV5ISQ/giphy.gif?cid=ecf05e476krgk4gemev4m34vnoli1sggethv6ii1671nue2b&rid=giphy.gif&ct=s"/>
+          <h2>PIKACHU</h2>
+          <p>En esta aplicación podras consultar los diferentes tipos de pokemons y sus especificaciones.</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="slide">
+          <img src="https://media.giphy.com/media/2y0bDtmlrJtg4/giphy.gif"/>
+          <h2>CHARIZARD</h2>
+          <p>Podras añadir información personalizada sobre tus pokemons favoritos</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="slide">
+          <img src="https://media.giphy.com/media/pbviPVVW08jD2/giphy.gif"/>
+          <h2>CHARMANDER</h2>
+          <p>Además de hacer comparaciones entre ellos.</p>
+          <ion-button fill="clear" routerLink="../listar">Lista de pokemons <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </div>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+</ion-content>

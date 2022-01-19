@@ -1,0 +1,33 @@
+<app-header titol="Editar"></app-header>
+<ion-content  color="white">
+    <ion-grid>
+      <ion-row color="dark">
+        <ion-col>
+          <div text-center>
+            <h3>EDITANDO</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input [(ngModel)]="nombre" name="nombre" type="text" placeholder="NOMBRE" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input [(ngModel)]="tipo" name="tipo" type="text" placeholder="TIPO" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input [(ngModel)]="habilidades" name="habilidades" type="text" placeholder="HABILIDADES" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input [(ngModel)]="tamano" name="tamano" type="text" placeholder="TAMAÑO" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <input type="file" [(ngModel)]="imagen" (change)="selectedFile($event)" />
+           </ion-item>
+          </div>
+          <br><br>
+          <div padding>
+            <ion-button  size="large" (click)="editarPokemon()" expand="block">TERMINAR</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>Menu de Inicio</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/home">Inicio</ion-item>
+        <ion-item routerLink="/formulario">Formulario</ion-item>
+        <ion-item routerLink="/listar">Listar</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
